@@ -5,35 +5,43 @@
     <title>Adam's Hero video assignment - Sprint 1 180910</title>
     <link rel="stylesheet" href="./style.css" />
     <link href="https://fonts.googleapis.com/css?family=Merriweather" rel="stylesheet">
+    <script src="./myScript.js" type="text/javascript"></script>
   </head>
   <body>
     <section class="video-container">
       <article class="hero small">
-        <video autoplay muted>
+        <video autoplay muted loop id="videoSmall">
           <source src="./videos/SampleVideo_360x240_1mb.mp4" type="video/mp4">
           <source src="./videos/SampleVideo_360x240_1mb.webm" type="video/webm">
           <p>Video not supported</p>
         </video>
+        <div class="video-title-block small">
+          <h1>GIANT RABBIT</h1>
+          <input type="button" name="" value="PAUSE" class="myButton" id="buttonSmall">
+        </div>
       </article>
       <article class="hero medium">
-        <video autoplay muted>
+        <video autoplay muted loop id="videoMedium">
           <source src="./videos/SampleVideo_720x480_1mb.mp4" type="video/mp4">
           <source src="./videos/SampleVideo_720x480_1mb.webm" type="video/webm">
           <p>Video not supported</p>
         </video>
+        <div class="video-title-block" medium>
+          <h1>GIANT RABBIT</h1>
+          <input type="button" name="" value="PAUSE" class="myButton" id="buttonMedium">
+        </div>
       </article>
       <article class="hero big">
-        <video autoplay muted>
+        <video autoplay muted loop id="videoBig">
           <source src="./videos/SampleVideo_1280x720_1mb.mp4" type="video/mp4">
           <source src="./videos/SampleVideo_1280x720_1mb.webm" type="video/webm">
           <p>Video not supported</p>
         </video>
+        <div class="video-title-block big">
+          <h1>GIANT RABBIT</h1>
+          <input type="button" name="" value="PAUSE" class="myButton" id="buttonBig">
+        </div>
       </article>
-      <div class="video-title-block">
-        <h1>GIANT RABBIT</h1>
-        <input type="button" name="" value="PRESS ME" id="myButton">
-      </div>
-
     </section>
 
   </body>
