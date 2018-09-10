@@ -2,10 +2,9 @@
 
 body {
   margin: 0px;
-  background: red;
+  background: white;
   font-family: 'Merriweather', serif;
 }
-
 
 .video-container {
   position: relative;
@@ -14,16 +13,20 @@ body {
   display: block;
   margin-left: auto;
   margin-right: auto;
-  position: relative;
-  top: 100px;
+  position: absolute;
   z-index: 2;
+  width: 100%;
   text-align: center;
-  height: 100vh;
+
+  /* vertical align of video titles */
+  top: 50%;
+  transform: translateY(-50%);
+
 }
 h1 {
   color: white;
   font-style: Italic;
-  font-size: 50px;
+  font-size: 30px;
   margin-top: 0px;
   margin-bottom: 10px;
 }
@@ -35,6 +38,10 @@ h1 {
   font-size: 30px;
   color: #FFFFFF;
   text-align:center;
+  outline: none;
+}
+#myButton:hover {
+  background: rgba(0, 0, 0, 0.5);
 }
 .hero {
   width: 100%;
@@ -43,7 +50,8 @@ h1 {
   padding: 0px;
 }
 video {
-  position: absolute;
+  /* visibility: hidden; */
+  position: relative;
   width: 100%;
   height: auto;
   margin: 0px;
@@ -67,14 +75,8 @@ Default is mobile view, then changes with growing screensize */
 
 /* Tablet */
 @media (min-width: 600px) {
-  body {
-    background: green;
-  }
   h1 {
     font-size: 70px;
-  }
-  .video-title-block{
-    top: 150px;
   }
   .small {
     display: none;
@@ -88,14 +90,8 @@ Default is mobile view, then changes with growing screensize */
 }
 /* Desktop */
 @media (min-width: 900px) {
-  body {
-    background: blue;
-  }
   h1 {
     font-size: 80px;
-  }
-  .video-title-block{
-    top: 200px;
   }
   .small {
     display: none;
